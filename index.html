@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kinjal’s Home Kitchen 🍲</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Top Banner / Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Kinjal’s Home Kitchen</h1>
+        <p class="tagline">
+          Clean Indian recipes you can actually cook on a weekday.<br />
+          High-protein, real ingredients, no drama. Straight from our family spreadsheet.
+        </p>
+
+        <div class="hero-highlights">
+          <span class="chip">🌱 Vegetarian-friendly</span>
+          <span class="chip">💪 Protein focus</span>
+          <span class="chip">🥭 Real home style</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <p class="hero-subtitle">Today's picks</p>
+        <ul>
+          <li>🥬 Spinach + Avocado Smoothie</li>
+          <li>🥭 Papaya Orange Drink</li>
+          <li>🫘 Mixed Pulses with Veggies</li>
+          <li>🥜 Peanut Tikki</li>
+        </ul>
+        <p class="mini-note">Swipe / tap a card below to see full recipe 👇</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Recipe Section -->
+  <main class="content">
+    <section>
+      <h2 class="section-title">Recipes</h2>
+
+      <!-- This grid gets filled by JS -->
+      <div id="recipe-grid" class="recipe-grid"></div>
+    </section>
+
+    <!-- Detail Drawer -->
+    <section id="detail-panel" class="detail-panel hidden">
+      <button id="close-detail" class="close-btn">✕</button>
+      <div id="detail-inner" class="detail-inner">
+        <!-- JS will inject recipe detail here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      💖 Made with love in our kitchen.
+      <br />
+      <span class="footer-small">High-protein, high-flavor, low drama.</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
